@@ -1,16 +1,16 @@
 Privacy Policy
 
-  Little Logs
-  Last updated: March 5, 2026
+  BabySkillMap
+  Last updated: April 12, 2026
 
   ---
   1. Introduction
 
-  Little Logs ("we," "our," or "us") is a baby tracking application designed to help parents and caregivers log and monitor their
+  BabySkillMap ("we," "our," or "us") is a baby tracking application designed to help parents and caregivers log and monitor their
   baby's daily activities, growth, and milestones. This Privacy Policy explains how we collect, use, store, and protect your
   information when you use our mobile application.
 
-  By using Little Logs, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.
+  By using BabySkillMap, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.
 
   ---
   2. Information We Collect
@@ -33,13 +33,13 @@ Privacy Policy
 
   Information from Third-Party Sign-In
 
-  If you sign in with Google or Apple, we receive your name and email address from those providers. We do not receive your password.
+  If you sign in with Google, we receive your name and email address from those providers. We do not receive your password.
   Those sign-ins are governed by https://policies.google.com/privacy and https://www.apple.com/legal/privacy/ respectively.
 
   ---
   3. How We Use Your Information
 
-  We use your information solely to provide and improve the Little Logs app:
+  We use your information solely to provide and improve the BabySkillMap app:
 
   - Display your baby's profile, activity history, growth charts, and milestone tree.
   - Calculate XP, levels, streaks, and daily quests within the app.
@@ -67,10 +67,6 @@ Privacy Policy
   Purpose: Authentication, database (Firestore), and file storage
   Privacy Policy: https://firebase.google.com/support/privacy
   ────────────────────────────────────────
-  Provider: Apple (Sign in with Apple)
-  Purpose: Optional sign-in method
-  Privacy Policy: https://www.apple.com/legal/privacy/
-  ────────────────────────────────────────
   Provider: Google (Sign in with Google)
   Purpose: Optional sign-in method
   Privacy Policy: https://policies.google.com/privacy
@@ -97,7 +93,7 @@ Privacy Policy
   ---
   6. Children's Privacy
 
-  Little Logs is intended for use by parents and caregivers (adults aged 13 or older). The app collects information about babies at
+  BabySkillMap is intended for use by parents and caregivers (adults aged 13 or older). The app collects information about babies at
   the direction of a parent or guardian, but is not directed at children themselves and does not knowingly collect personal
   information directly from children. If you believe we have inadvertently collected information about a child without appropriate
   parental consent, please contact us and we will delete it promptly.
@@ -112,7 +108,7 @@ Privacy Policy
   ---
   8. Push Notifications
 
-  Little Logs may send local push notifications (e.g., reminders to stop a running timer). These notifications are scheduled on your
+  BabySkillMap may send local push notifications (e.g., reminders to stop a running timer). These notifications are scheduled on your
   device and do not involve sending your data to a remote server. You can disable notifications at any time in your device's Settings
   app.
 
@@ -142,10 +138,10 @@ Privacy Policy
 
   If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:
 
-  Email: zachzwy@gmail.com
-  App: Little Logs
+  Email: babyskillmap@gmail.com
+  App: BabySkillMap
 
-  We will respond to all inquiries within 30 days.
+  We will respond to all inquiries within 7 days.
 
   ---
   12. Changes to This Policy
@@ -155,5 +151,5 @@ Privacy Policy
   acceptance of the updated policy.
 
   ---
-  Little Logs is an independent app and is not affiliated with or endorsed by Google, Apple, or any other third-party service
+  BabySkillMap is an independent app and is not affiliated with or endorsed by Google, Apple, or any other third-party service
   mentioned in this policy.
