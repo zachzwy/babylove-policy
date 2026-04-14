@@ -1,5 +1,6 @@
 # Terms of Service
 
+**BabySkillMap**  
 **Last updated: April 14, 2026**
 
 Welcome to BabySkillMap. Please read these Terms of Service ("Terms") carefully before using the BabySkillMap mobile application (the "Service") operated by BabySkillMap ("us", "we", or "our").
