@@ -60,4 +60,3 @@ We may update these Terms from time to time. Continued use of the app after chan
 ## 12. Contact Us
 If you have any questions about these Terms, please contact us:
 - **Email:** babyskillmap@gmail.com
-- **Website:** https://babyskillmap.com
