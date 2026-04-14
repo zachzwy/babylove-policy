@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabySkillMap | Track Every Precious Milestone</title>
+    <meta name="description" content="The all-in-one companion for your baby's developmental journey. Track growth, milestones, and memories with AI-powered insights and family sharing.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5B8FE3;
+            --primary-light: #E3F2FD;
+            --secondary: #5856D6;
+            --accent: #FF9500;
+            --text-main: #1A1A1A;
+            --text-secondary: #666666;
+            --bg-light: #FFFFFF;
+            --bg-floral: #FDF8FF;
+            --card-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--bg-light);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn-download {
+            background-color: var(--primary);
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 10px 20px rgba(91, 143, 227, 0.2);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 160px 0 100px;
+            background: linear-gradient(180deg, var(--bg-floral) 0%, #FFFFFF 100%);
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 64px;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #1A1A1A 0%, #4A4A4A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .hero-image {
+            position: relative;
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: var(--transition);
+        }
+
+        .hero-image:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: var(--card-shadow);
+        }
+
+        /* --- Features Section --- */
+        .features {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-header h2 {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 18px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .feature-card {
+            padding: 40px;
+            border-radius: 24px;
+            background: #FFFFFF;
+            border: 1px solid #F0F0F0;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--card-shadow);
+            border-color: var(--primary-light);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-light);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        /* --- Care Team Section --- */
+        .care-team {
+            padding: 100px 0;
+            background-color: #F9FAFB;
+        }
+
+        .split-section {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .split-image {
+            flex: 1;
+        }
+
+        .split-image img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .split-content {
+            flex: 1;
+        }
+
+        .split-content h2 {
+            font-size: 42px;
+            margin-bottom: 24px;
+        }
+
+        /* --- CTA Section --- */
+        .cta-banner {
+            margin: 100px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: 40px;
+            padding: 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner h2 {
+            font-size: 48px;
+            margin-bottom: 24px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .app-store-btn {
+            height: 54px;
+            background: #000;
+            color: white;
+            padding: 0 32px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .app-store-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid #EEE;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 968px) {
+            .hero-grid, .split-section {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-content h1 { font-size: 48px; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .hero-content p { margin: 0 auto 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                BabySkillMap
+            </div>
+            <!-- Optional links here -->
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Track Every Precious Milestone</h1>
+                    <p>The smartest companion for your baby's unique journey. From first smiles to big steps, we capture it all.</p>
+                    <div class="cta-buttons" style="justify-content: flex-start;">
+                        <a href="#" class="btn-download">Get the App</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="babyskillmap_hero_v3_1776181287637.png" alt="BabySkillMap App Interface">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Designed for Modern Parents</h2>
+                <p>Simple, secure, and packed with intelligence to help your little one thrive.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Milestone Mapping</h3>
+                    <p>Visualize developmental leaps with our interactive skill map tailored to your baby's age.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Smart Growth Tracking</h3>
+                    <p>Log feeding, sleep, and weights. Get beautiful charts that make trends easy to understand.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Guided Insights</h3>
+                    <p>Receive personalized tips and developmental summaries powered by our expert AI models.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="care-team">
+        <div class="container">
+            <div class="split-section">
+                <div class="split-image">
+                    <img src="care_team_feature_v1_1776181315263.png" alt="Family sharing memories">
+                </div>
+                <div class="split-content">
+                    <h2>Share the Joy with Your Care Team</h2>
+                    <p>Invite grandparents, partners, and caregivers to a shared family space. Stay in sync with synchronized logs, photos, and updates—no matter where you are.</p>
+                    <ul style="list-style: none; margin-top: 24px;">
+                        <li style="margin-bottom: 12px;">✅ Real-time sync across all devices</li>
+                        <li style="margin-bottom: 12px;">✅ Secure, private family feed</li>
+                        <li>✅ Customizable access levels</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner">
+                <h2>Start Your Journey Today</h2>
+                <p>Join thousands of parents tracking the moments that matter most.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="app-store-btn">
+                        <span>App Store</span>
+                    </a>
+                    <a href="#" class="app-store-btn">
+                        <span>Google Play</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BabySkillMap. All rights reserved.</p>
+            <div style="margin-top: 16px;">
+                <a href="#" style="color: var(--text-secondary); margin: 0 10px;">Privacy Policy</a>
+                <a href="#" style="color: var(--text-secondary); margin: 0 10px;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
